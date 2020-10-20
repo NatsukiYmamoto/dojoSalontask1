@@ -41,5 +41,11 @@ class ViewController: UIViewController {
         goukei.text = "\(result)"
     }
     
+    @IBAction func resetButtun(_ sender: Any) {
+        loadView()
+        viewDidLoad()
+        
+    }
+    
 }
 
