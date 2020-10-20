@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,81 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="kadai1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PM0-qX-4K0">
+                                <rect key="frame" x="191" y="194" width="32" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oQc-HJ-AAu">
+                                <rect key="frame" x="191" y="248" width="32" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="php-AG-xAn">
+                                <rect key="frame" x="191" y="302" width="32" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CoY-Me-gCk">
+                                <rect key="frame" x="191" y="356" width="32" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f9L-uo-UIa">
+                                <rect key="frame" x="191" y="410" width="32" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kA4-nt-cIS">
+                                <rect key="frame" x="186" y="574" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V8V-lC-vha">
+                                <rect key="frame" x="168.5" y="504" width="77" height="30"/>
+                                <state key="normal" title="足しちゃう"/>
+                                <connections>
+                                    <action selector="didTapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rUn-S7-yEb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="php-AG-xAn" firstAttribute="top" secondItem="oQc-HJ-AAu" secondAttribute="bottom" constant="20" id="3ib-gK-TuV"/>
+                            <constraint firstItem="PM0-qX-4K0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="9tY-nG-rlW"/>
+                            <constraint firstItem="PM0-qX-4K0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BbV-oS-D8t"/>
+                            <constraint firstItem="V8V-lC-vha" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DdS-7O-MkP"/>
+                            <constraint firstItem="CoY-Me-gCk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MJ3-Z5-jME"/>
+                            <constraint firstItem="f9L-uo-UIa" firstAttribute="top" secondItem="CoY-Me-gCk" secondAttribute="bottom" constant="20" id="MdN-vh-Wu2"/>
+                            <constraint firstItem="f9L-uo-UIa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WaV-JH-Zyr"/>
+                            <constraint firstItem="kA4-nt-cIS" firstAttribute="top" secondItem="V8V-lC-vha" secondAttribute="bottom" constant="40" id="XGI-6S-h9Z"/>
+                            <constraint firstItem="php-AG-xAn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dU2-ZK-Mt9"/>
+                            <constraint firstItem="V8V-lC-vha" firstAttribute="top" secondItem="f9L-uo-UIa" secondAttribute="bottom" constant="60" id="lMZ-B8-Jsl"/>
+                            <constraint firstItem="oQc-HJ-AAu" firstAttribute="top" secondItem="PM0-qX-4K0" secondAttribute="bottom" constant="20" id="lTo-Gr-QED"/>
+                            <constraint firstItem="kA4-nt-cIS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rQm-bh-cTf"/>
+                            <constraint firstItem="CoY-Me-gCk" firstAttribute="top" secondItem="php-AG-xAn" secondAttribute="bottom" constant="20" id="tHV-nj-35j"/>
+                            <constraint firstItem="oQc-HJ-AAu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zw8-UK-Gxh"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="goukei" destination="kA4-nt-cIS" id="8AE-7Y-6tI"/>
+                        <outlet property="textField1" destination="PM0-qX-4K0" id="Aa7-4l-s8w"/>
+                        <outlet property="textField2" destination="oQc-HJ-AAu" id="TLe-0p-HVD"/>
+                        <outlet property="textField3" destination="php-AG-xAn" id="gsN-Pl-m49"/>
+                        <outlet property="textField4" destination="CoY-Me-gCk" id="SNh-li-sL3"/>
+                        <outlet property="textField5" destination="f9L-uo-UIa" id="Yh4-QX-Ep7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
     </scenes>
 </document>
